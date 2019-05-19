@@ -1,20 +1,20 @@
+var numSquares = 6;
+var colors = generateRandomColors(numSquares);
+var squares = document.querySelectorAll(".square");
+var pickColor = pickedColor();
+var colorDisplay = document.querySelector("#colorDisplay");
+var messageDisplay = document.querySelector("#message");
+var h1 = document.querySelector("h1");
+var reset = document.querySelector("#reset");
+var easy = document.querySelector("#easy");
+var hard = document.querySelector("#hard");
+
 
 
 init();
  
 function init(){
-    //Declared variables
-    var numSquares = 6;
-    var colors = generateRandomColors(numSquares);
-    var squares = document.querySelectorAll(".square");
-    var pickColor = pickedColor();
-    var colorDisplay = document.querySelector("#colorDisplay");
-    var messageDisplay = document.querySelector("#message");
-    var h1 = document.querySelector("h1");
-    var reset = document.querySelector("#reset");
-    var easy = document.querySelector("#easy");
-    var hard = document.querySelector("#hard");
-
+ 
 //pickColor text
 colorDisplay.textContent = pickColor;
 
